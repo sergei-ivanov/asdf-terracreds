@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [[ -z "${TC_CONFIG_PATH:-}" ]]; then
+	export TC_CONFIG_PATH="${ASDF_INSTALL_PATH%/bin}/config"
+fi
